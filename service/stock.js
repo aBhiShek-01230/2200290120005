@@ -4,27 +4,25 @@ const cache = new NodeCache({ stdTTL: 300 });
 
 const BASE_URL = 'http://20.244.56.144/evaluation-service';
 const AUTH_URL = 'http://20.244.56.144/evaluation-service/auth'; 
-
-const CLIENT_ID = "4406c785-d53a-4c25-bc53-68adc36bed2e";
-const CLIENT_SECRET = "uVXyDxUSgttvMAKT";
-const CLIENT_EMAIL = "vibhav.2226cse1104@kiet.edu";
-const ROLL_NO = "2200290100189(2)";
+const CLIENT_ID = "c390aa96-7da1-4144-a7bf-e66c4e10df46";
+const CLIENT_SECRET = "KFZafQdUGwyPVRpG";
+const CLIENT_EMAIL = "abhishek.2226cs1080@kiet.edu";
+const ROLL_NO = "2200290120005";
 const ACCESS_CODE = "SxVeja";
-const NAME = "Vibhav Bhartiya";
+const NAME = "Abhishek kumar Anand";
 
 
 async function getAccessToken() {
     try {
         
         const response = await axios.post(AUTH_URL, {
-
-            "email": "vibhav.2226cse1104@kiet.edu",
-            "name": "Vibhav  Bhartiya",
-            "rollNo": "2200290100189(2)",
-            "accessCode": "SxVeja",
-            "clientID": "4406c785-d53a-4c25-bc53-68adc36bed2e",
-            "clientSecret": "uVXyDxUSgttvMAKT"
-        }
+    "email": "abhishek.2226cs1080@kiet.edu",
+    "name": "abhishek@gmail.com",
+    "rollNo": "2200290120005",
+    "accessCode": "SxVeja",
+    "clientID": "c390aa96-7da1-4144-a7bf-e66c4e10df46",
+    "clientSecret": "KFZafQdUGwyPVRpG"
+}
 );
 
         console.log('Token received:', response.data);
